@@ -9,7 +9,7 @@ const authRoutes = require('./routes/auth'); // ✅ Import auth routes
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors("*"));
 app.use(bodyParser.json());
 
 // Routes
